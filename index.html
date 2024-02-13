@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let generateColor =()=>{
+            let val="0123456789ABCDEFGHIJ";
+            let color="#";
+
+            for(let i=0;i<6;i++){
+                color+=val[Math.floor(Math.random()*18)];
+            }
+            return color;
+        }
+
+        function changeColor(){
+            document.body.style.backgroundColor=generateColor();
+        }
+        let clickk=setInterval(changeColor,10);
+    
+
+        
+    </script>
+</body>
+</html>

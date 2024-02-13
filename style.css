@@ -1,0 +1,10 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Color{
+    padding: 16px;
+    background-color: grey;
+}
